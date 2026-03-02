@@ -15,7 +15,7 @@ It is built without frameworks to demonstrate strong fundamentals in:
 
 A future version will migrate this project to React to improve component reusability and scalability.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3 (modular structure)
