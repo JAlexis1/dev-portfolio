@@ -1,18 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Portfolio</title>
 
+    <link rel="icon" href="./assets/icons/work_bag.png" type="image/png">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/components.css">
 </head>
+
 <body>
-    <h1>My Dev Portfolio</h1>
+    <header class="header">
+        <div class="container nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+
+                <h1 class="hero-title">
+                    Jhon Alexis Ruiz Quiceno
+                </h1>
+
+                <p class="hero-role">
+                    web Developer
+                </p>
+
+                <p class="hero-subtitle">
+                    Systems Engineering student passionate about web development,
+                    problem solving and building efficient software solutions.
+                </p>
+
+                <a href="#projects" class="btn-projects">
+                    View Projects
+                </a>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+
+                <h2 class="section-title">About Me</h2>
+
+                <p class="about-text">
+                    I am a Systems Engineering student interested in building
+                    well-structured software solutions. I enjoy problem solving,
+                    working with algorithms, and developing both frontend and backend
+                    applications while continuously improving my technical skills.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+
+            <div class="container">
+
+                <h2 class="section-title">Projects</h2>
+
+                <div class="filters">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="web">
+                        Web
+                    </button>
+
+                    <button class="filter-btn" data-filter="backend">
+                        Backend
+                    </button>
+
+                    <button class="filter-btn" data-filter="other">
+                        Algorithms
+                    </button>
+
+                </div>
+
+                <div id="projects-container" class="projects-grid">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact">
+
+            <div class="container">
+
+                <h2 class="section-title">Contact</h2>
+                <p class="contact-text">
+                    I'm always open to discussing new opportunities,
+                    projects, or collaborations.
+                </p>
+                <div class="contact-info">
+                    <a href="https://github.com/JAlexis1" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/icons/github.png" alt="GitHub Icon" class="social-icon">
+                        JAlexis1
+                    </a>
+                    <a href="https://www.linkedin.com/in/jalexis01/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/icons/linkedin.png" alt="LinkedIn Icon" class="social-icon">
+                        JAlexis01
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jalexisruiz1@gmail.com&su=Portfolio%20Contact"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/icons/gmail.png" alt="Email Icon" class="social-icon">
+                        jalexisruiz1@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copy">&copy 2026 Jhon Alexis Ruiz</p>
+            <p class="footer-text">Built with HTML, CSS and JavaScript</p>
+        </div>
+    </footer>
 
     <script type="module" src="./js/main.js"></script>
 </body>
+
 </html>
